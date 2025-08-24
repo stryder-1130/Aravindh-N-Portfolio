@@ -190,5 +190,79 @@ header h1 {
   transform: scale(1.1);
   box-shadow: 0 0 15px #00bfff, 0 0 30px #00bfff;
 }
+    body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0b132b;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #050a18;
+}
+
+.logo {
+  font-weight: bold;
+  color: #00aaff;
+}
+
+.btn {
+  background: #00aaff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #0088cc;
+}
+
+/* Works Section */
+.works {
+  padding: 40px;
+  text-align: center;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.project-card {
+  background: #111b33;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  width: 100%;
+  max-width: 280px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  background: #162447;
+}
+
+.project-card img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+/* Contact Button Centered */
+.contact-button {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
 
 }
